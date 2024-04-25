@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+
+    <title>Square Rewind</title>
+</head>
+<body>
+    <div id="main">
+    <div id="fs">
+    <div id="nav">
+        <div id="headd">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                    
+                </div>
+
+            
+                <a href="index.html" id="home"><b>Home</b></a>
+                <a href="contacts.html" id="Contacts"><b>Contacts</b></a>
+                <a href="catalog.html" id="Catalog"><b>Catalog</b></a>
+                <a href="about.html" id="About"><b>About us</b></a>
+
+            <input class="search_input" type="text" placeholder="trousers..."><div class="kryg_se"></div><img onclick="search_mega()" id="search" src="img/search.png" alt=""><div id="search_tab"></div>
+            <a href="basket.html"><img id="cart" src="img/shopping-cart.png" alt=""></a>
+            <a href=""><img id="logout" src="img/log-out.png" alt=""></a>
+        </div>
+     </div> <!--header-end -->
+     <div id="content">
+        <div id="b_coll">
+           <b>BEST COLLECTION OF THE YEAR</b>
+        </div>
+        <div id="text1">
+            <a class="bluee">DIVERSIFY</a> <span class="white">YOUR OUTFIT WITH OUR JEANS</span>
+        </div>
+        <div id="text2">
+            Become more confident and stylish with denim clothes from our brand 
+            <span class="bluee"><a style="color: #00FFF0;" href="">Square Rewind</a>.</span>
+        </div>
+        <div class="photo_i">
+            <table id="photo_num">
+                <tbody>
+                    <tr class="tr_">
+                        
+                        <td><a style="cursor: pointer;" onclick="changePhoto('prev')"><img id="larr" src="img/arrow-left-circle.png" alt=""></a></td>
+                        <td><a href="#" onclick="changePhoto('prev'); return false;"><img id="imm_sw" src="img/1a.png" alt=""></a></td>
+                        <td><a style="cursor: pointer;" onclick="changePhoto('next')"><img id="rarr" src="img/arrow-right-circle.png" alt=""></a></td>
+                    </tr>
+                        
+                    <tr id="nav_ima">
+                        <td><div id="fn"></div></td>
+                        <td><div id="sn"></div></td>
+                        <td><div id="thn"></div></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <div id="shopnow">
+            Shop now
+        </div>
+        <div id="collectionnow">
+            Collection 2024
+        </div>
+        <img src="img/line.png" id="line" alt="">
+        </div>
+        
+    </div>
+    <div id="ss" >
+        <div id="flexiblepayment">
+            <img id="flexpay" src="img/flexpay.png" alt="">
+            <span id="flexible"><b>Flexible payment</b></span>
+            <span id="pay"><b>Pay with multiple cards.</b></span>
+        </div>
+        <div id="return">
+            <img id="boxreturn" src="img/box.png" alt="">
+            <span id="easreturn"><b>Easy return policy</b></span>
+            <span id="hasproblem"><b>If item has problems.</b></span>
+        </div>
+        <div id="online">
+            <img id="custservis" src="img/chat.png" alt="">
+            <span id="custserv"><b>Customer service</b></span>
+            <span id="onl247"><b>24/7 online support.</b></span>
+        </div>
+    </div>
+    <div id="ts">
+        <span id="ca">Catalog</span>
+        <div class="grouping_by">
+            <div style="position:absolute;left:97px; top: 80px;  width:91px; background-color: #7EE5FA;" id="all_se"><span style="position: relative; top: 20px;">All</span></div>
+            <div style="position:absolute;left:218px; top: 80px;width: 126px;" id="all_se"><span style="position: relative; top: 20px;">New</span></div>
+            <div style="position:absolute;left:374px; top: 80px;width: 235px;" id="all_se"><span style="position: relative; top: 20px;">Outerwear</span></div>
+            <div style="position:absolute;left:639px; top: 80px;width: 235px;" id="all_se"><span style="position: relative; top: 20px;">Trousers</span></div>
+        </div>
+        
+        <div class="photo" style="position: absolute; left: 101px; top: 240px;">
+            <img src="img/j1.png"  alt="">
+            <div class="like" onclick="like_click(this)"><img src="img/heart.png" alt=""></div>
+            <div class="new">New</div>
+            <div class="name-cost">Cargo-jeans<br><span style="font-size: 26px;">$22.99</span></div>
+        </div>
+        <div class="photo" style="position: absolute; left: 564px; top: 240px;">
+            <img src="img/j2.png"  alt="">
+            <div class="like" onclick="like_click(this)"><img src="img/heart.png" alt=""></div>
+            <div class="name-cost" style="font-size: 23px;">Oversized high back jeans<br><span style="font-size: 26px;">$23.99</span></div>
+        </div>
+        <div class="photo" style="position: absolute; left: 1026px; top: 240px;">
+            <img src="img/j3.png"  alt="">
+            <div class="like" onclick="like_click(this)"><img src="img/heart.png" alt=""></div>
+            <div class="sale">Sale</div>
+            <div class="name-cost">Oversized low back jeans<br><span style="font-size: 26px;">$24.99</span></div>
+        </div>
+
+        <div class="viewmore" onclick="viewmore()">
+            <span style="position: relative; top:-5px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">View more </span>
+            <img src="img/arrow-right.png" alt="">
+        </div>
+        
+    </div>  
+    </div>
+    
+    <footer>
+        
+    </footer>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+
